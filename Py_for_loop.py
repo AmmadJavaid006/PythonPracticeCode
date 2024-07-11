@@ -3,12 +3,6 @@ import sys
 list = (1, 4, 9, 16, 25, 36, 49, 64, 81, 100, 49)
 x = 49
 idx = 0
-""" for i in list:
-    if i % 2 != 0:
-        print(i)
-        i += 1 
-        
-i += 1 """
 
 for i in list:
     if (i == x):
