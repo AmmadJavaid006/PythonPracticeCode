@@ -1,4 +1,4 @@
-
+""" 
 def commaCode():
     items = []
     while True:
@@ -18,4 +18,7 @@ def commaCode():
             print(name, end= ", ")
 
 
-commaCode()
+commaCode() """
+
+t = [9, 41, 12, 3, 74, 15]
+print(t[12 : 3])
