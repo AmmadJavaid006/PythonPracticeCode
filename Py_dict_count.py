@@ -8,3 +8,13 @@ for name in names:
         dict[name] = dict[name] + 1
 
 print(dict)
+
+############ Can Also Be Done As ###########
+
+dict2 = {}
+names = ['csev', 'cwen', 'cwen', 'csev', 'x', 'x', 'x', 'cwen']
+
+for name in names:
+    dict2[name] = dict2.get(name, 0) + 1
+
+print(dict)
