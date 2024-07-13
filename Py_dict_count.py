@@ -18,3 +18,6 @@ for name in names:
     dict2[name] = dict2.get(name, 0) + 1
 
 print(dict)
+
+x = dict.get[name, 0]
+print(x)
