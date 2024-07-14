@@ -10,6 +10,7 @@ for line in fhandle:
         count += 1
 print(count)
 
+################################### Both Are Same ###################################
 
 fname = input("Enter File Name: ")
 fhandle = open(fname)
