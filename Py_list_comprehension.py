@@ -28,25 +28,29 @@ print(sqrnum) # =============================================================> s
 
 matrix = [[i + z*3 + 1 for i in range(3)] for z in range(3)]
 for row in matrix:
-    print("Matrix  ", row, end = " \n") # =========================> Creates a 3x3 Matrix
+    print("Matrix")
+    print(row, end = " \n") # =====================================> Creates a 3x3 Matrix
 
 #########################################################################################
 
 list = [[1, 2, 3], [4, 5, 6], [7, 8, 9]]
 flatlist = [elements for element in list for elements in element]
-print("Flatlist", flatlist) # ================================> Gives a Flat-List/Filters
+print("Flatlist")
+print(flatlist) # ============================================> Gives a Flat-List/Filters
 
 #########################################################################################
 
 words = ["apple", "banana", "cherry"]
 list = [len(item) for item in words] # =======> Gives the number of character in the word
-print("Character", list)
+print("Character")
+print(list)
 
 #########################################################################################
 
 sentence = "The quick brown fox jumps over the lazy dog"
 list = [len(word) for word in sentence.split()] # ========> Gives the number of character 
-print("Character", list) # ===================================================> in a word
+print("Character")
+print(list) # ================================================================> in a word
 
 #########################################################################################
 
@@ -60,7 +64,8 @@ print(finallist) # ===========================================>that are divisiab
 list = ['a', 'b', 'c', 'd']
 
 tuplelist = [(list.index(index), index) for index in list]
-print("Index with Number", tuplelist) # ==========> Gives tuples with their corresponding  
+print("Index with Number")
+print(tuplelist) # ===============================> Gives tuples with their corresponding  
 # ===================================================> Index and value from List (1, 'a')
 
 #########################################################################################
@@ -74,18 +79,21 @@ for i in matrix: # ===============> Gives a NxN matrix of numbers with 1 going D
 
 matrix = [[5 * (i * 5 + j + 1) for j in range(5)] for i in range(5)]
 for z in matrix: # =============================> Gives a 5x5 Matrix with multiples of 5
-    print("Matrix", z, end = ",\n")
+    print("Matrix")
+    print(z, end = ",\n")
 
 #########################################################################################
 
 matrix = [[2 * (i * 5 + j + 1) for j in range(5)] for i in range(5)]
 for z in matrix:
+    print("Matrix")
     print(z, end = " \n")
 
 #########################################################################################
 
 matrix = [[3 * (i * 4 + j + 1) for j in range(4)] for i in range(5)]
 for z in matrix:
+    print("Matrix")
     print(z)
 
 #########################################################################################
@@ -94,24 +102,28 @@ n = int(input("Enter Number of Rows: "))
 m = int(input("Enter Number of Columns: "))
 matrix = [[i * m + z + 1 for z in range(m)] for i in range(n)]
 for x in matrix:
+    print("Matrix")
     print(x)
 
 #########################################################################################
 
 matrix = [[1 if r <= c else 0 for r in range(10)] for c in range(10)]
 for s in matrix:
+    print("Matrix")
     print(s)
 
 #########################################################################################
 
 matrix = [[2 if (i * 5 + z + 1) % 2 == 0 else 1 for z in range(5)] for i in range(5)]
 for x in matrix:
+    print("Matrix")
     print(x)
 
 #########################################################################################
 
 matrix = [[1 if r >= c else 0 for r in range(10)] for c in range(10)]
 for s in matrix:
+    print("Matrix")
     print(s)
 
 #########################################################################################
@@ -119,4 +131,5 @@ for s in matrix:
 list = [i for i in range(1, 8)]
 matrix = [[(i + j) % 2 for j in range(8)] for i in range(8)]
 for x in matrix:
+    print("Matrix")
     print(x)
