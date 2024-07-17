@@ -75,3 +75,48 @@ for i in matrix: # ===============> Gives a NxN matrix of numbers with 1 going D
 matrix = [[5 * (i * 5 + j + 1) for j in range(5)] for i in range(5)]
 for z in matrix: # =============================> Gives a 5x5 Matrix with multiples of 5
     print("Matrix", z, end = ",\n")
+
+#########################################################################################
+
+matrix = [[2 * (i * 5 + j + 1) for j in range(5)] for i in range(5)]
+for z in matrix:
+    print(z, end = " \n")
+
+#########################################################################################
+
+matrix = [[3 * (i * 4 + j + 1) for j in range(4)] for i in range(5)]
+for z in matrix:
+    print(z)
+
+#########################################################################################
+
+n = int(input("Enter Number of Rows: "))
+m = int(input("Enter Number of Columns: "))
+matrix = [[i * m + z + 1 for z in range(m)] for i in range(n)]
+for x in matrix:
+    print(x)
+
+#########################################################################################
+
+matrix = [[1 if r <= c else 0 for r in range(10)] for c in range(10)]
+for s in matrix:
+    print(s)
+
+#########################################################################################
+
+matrix = [[2 if (i * 5 + z + 1) % 2 == 0 else 1 for z in range(5)] for i in range(5)]
+for x in matrix:
+    print(x)
+
+#########################################################################################
+
+matrix = [[1 if r >= c else 0 for r in range(10)] for c in range(10)]
+for s in matrix:
+    print(s)
+
+#########################################################################################
+
+list = [i for i in range(1, 8)]
+matrix = [[(i + j) % 2 for j in range(8)] for i in range(8)]
+for x in matrix:
+    print(x)
