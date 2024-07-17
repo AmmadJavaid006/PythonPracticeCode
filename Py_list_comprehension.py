@@ -28,13 +28,13 @@ print(sqrnum) # =============================================================> s
 
 matrix = [[i + z*3 + 1 for i in range(3)] for z in range(3)]
 for row in matrix:
-    print("Matrix  ", row, end = " \n") # ======================================> Creates a 3x3 Matrix
+    print("Matrix  ", row, end = " \n") # =========================> Creates a 3x3 Matrix
 
 #########################################################################################
 
 list = [[1, 2, 3], [4, 5, 6], [7, 8, 9]]
 flatlist = [elements for element in list for elements in element]
-print("Flatlist", flatlist) # ============================================> Gives a Flat-List/Filters
+print("Flatlist", flatlist) # ================================> Gives a Flat-List/Filters
 
 #########################################################################################
 
@@ -46,13 +46,13 @@ print("Character", list)
 
 sentence = "The quick brown fox jumps over the lazy dog"
 list = [len(word) for word in sentence.split()] # ========> Gives the number of character 
-print("Character", list) # ================================================================> in a word
+print("Character", list) # ===================================================> in a word
 
 #########################################################################################
 
 end = int(input("Enter Number Of Digits: "))
 list = [number for number in range(1, end + 1)]
-finallist = [number for number in list if number % 3 == 0] # ======== => Gives all number 
+finallist = [number for number in list if number % 3 == 0] # ==========> Gives all number 
 print(finallist) # ===========================================>that are divisiable by "3"
 
 #########################################################################################
@@ -60,8 +60,8 @@ print(finallist) # ===========================================>that are divisiab
 list = ['a', 'b', 'c', 'd']
 
 tuplelist = [(list.index(index), index) for index in list]
-print("Index with Number", tuplelist) # =====> Gives tuples with their corresponding Index and value from List 
-# =============================================================================> (1, 'a')
+print("Index with Number", tuplelist) # ==========> Gives tuples with their corresponding  
+# ===================================================> Index and value from List (1, 'a')
 
 #########################################################################################
 
