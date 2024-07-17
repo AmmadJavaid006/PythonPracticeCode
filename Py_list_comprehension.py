@@ -27,8 +27,8 @@ print(sqrnum) # =============================================================> s
 #########################################################################################
 
 matrix = [[i + z*3 + 1 for i in range(3)] for z in range(3)]
+print("Matrix")
 for row in matrix:
-    print("Matrix")
     print(row, end = " \n") # =====================================> Creates a 3x3 Matrix
 
 #########################################################################################
@@ -72,28 +72,29 @@ print(tuplelist) # ===============================> Gives tuples with their corr
 
 n = int(input("Value for NxN is: "))
 matrix = [[1 if i == j else 0 for j in range(n)] for i in range(n)]
+print("Matrix")
 for i in matrix: # ===============> Gives a NxN matrix of numbers with 1 going Diagonally
     print(i)
 
 #########################################################################################
 
 matrix = [[5 * (i * 5 + j + 1) for j in range(5)] for i in range(5)]
+print("Matrix")
 for z in matrix: # =============================> Gives a 5x5 Matrix with multiples of 5
-    print("Matrix")
     print(z, end = ",\n")
 
 #########################################################################################
 
 matrix = [[2 * (i * 5 + j + 1) for j in range(5)] for i in range(5)]
+print("Matrix")
 for z in matrix:
-    print("Matrix")
     print(z, end = " \n")
 
 #########################################################################################
 
 matrix = [[3 * (i * 4 + j + 1) for j in range(4)] for i in range(5)]
+print("Matrix")
 for z in matrix:
-    print("Matrix")
     print(z)
 
 #########################################################################################
@@ -101,35 +102,35 @@ for z in matrix:
 n = int(input("Enter Number of Rows: "))
 m = int(input("Enter Number of Columns: "))
 matrix = [[i * m + z + 1 for z in range(m)] for i in range(n)]
+print("Matrix")
 for x in matrix:
-    print("Matrix")
     print(x)
 
 #########################################################################################
 
 matrix = [[1 if r <= c else 0 for r in range(10)] for c in range(10)]
+print("Matrix")
 for s in matrix:
-    print("Matrix")
     print(s)
 
 #########################################################################################
 
 matrix = [[2 if (i * 5 + z + 1) % 2 == 0 else 1 for z in range(5)] for i in range(5)]
+print("Matrix")
 for x in matrix:
-    print("Matrix")
     print(x)
 
 #########################################################################################
 
 matrix = [[1 if r >= c else 0 for r in range(10)] for c in range(10)]
+print("Matrix")
 for s in matrix:
-    print("Matrix")
     print(s)
 
 #########################################################################################
 
 list = [i for i in range(1, 8)]
 matrix = [[(i + j) % 2 for j in range(8)] for i in range(8)]
+print("Matrix")
 for x in matrix:
-    print("Matrix")
     print(x)
