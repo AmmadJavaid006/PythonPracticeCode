@@ -25,29 +25,11 @@ def passdisplay():
         for k, v in passwords.items():
             print(k, ":", v)
         passcopy = input("Which Password you want to copy, Enter its Name: ")
-        if passcopy == "Facebook":
-            pyperclip.copy(passwords["Facebook"])
-        if passcopy == "Twitter":
-            pyperclip.copy(passwords["Twitter"])
-        if passcopy == "Instagram":
-            pyperclip.copy(passwords["Instagram"])
-        if passcopy == "Snapchat":
-            pyperclip.copy(passwords["Snapchat"])
-        if passcopy == "LinkedIn":
-            pyperclip.copy(passwords["LinkedIn"])
-        if passcopy == "TikTok":
-            pyperclip.copy(passwords["TikTok"])
-        if passcopy == "WhatsApp":
-            pyperclip.copy(passwords["WhatsApp"])
-        if passcopy == "Reddit":
-            pyperclip.copy(passwords["Reddit"])
-        if passcopy == "Pinterest":
-            pyperclip.copy(passwords["Pinterest"])
-        if passcopy == "YouTube":
-            pyperclip.copy(passwords["YouTube"])
-        print("Copied, Thank you!")
+    if passcopy in passwords:
+        pyperclip.copy(passwords[passcopy])
+        print("Password Copied")
     else:
-        print("No Worries, Thankyou!")
+        print("Logging Out")
 
 def masterpass(key):
     if key == "gamer@1546":
